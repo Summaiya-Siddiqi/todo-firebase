@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO APP</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDW3VvvGoj9Ht_JAQ6BbqiIaxGlBCxZhG0",
+    authDomain: "todo-firebase-12.firebaseapp.com",
+    databaseURL: "https://todo-firebase-12-default-rtdb.firebaseio.com",
+    projectId: "todo-firebase-12",
+    storageBucket: "todo-firebase-12.appspot.com",
+    messagingSenderId: "357871911069",
+    appId: "1:357871911069:web:bbbbb8b5c6a9373751d474"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"> <img src="images/logo.png" alt="logo" height="30px">TO DO APP</a>
+    </nav>
+    <div class="Main_div fluid-container">
+        <div class="Heading" style="display: flex; justify-content: center;">
+            <p>Enter Your Daily Task</p>
+        </div>
+        <div class="inner_div">
+            <input type="text" name="input" id="todo_item" placeholder="Enter Task">
+            <button class="btn" onclick="addTodo()">&plus;</button>
+            <button class="btn" onclick="delAll()"><i class="fa fa-trash-o"></i></button></div>
+        <div class="list_div container">
+            <ul id="list">
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+<!-- bootstrap js -->
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
